@@ -11,3 +11,7 @@ lowercase:
 sPoNgECaSe:
 	*nOuN*
 	aLtErNaTiNg uPpErCaSe aNd lOwErCaSe fOr tHe mEmEs
+
+
+Completed Languages:
+Python3 [x]
