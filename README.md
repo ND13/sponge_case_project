@@ -14,4 +14,7 @@ sPoNgECaSe:
 
 
 Completed Languages:
-Python3 [x]
+
+
+[x] Python 3
+
