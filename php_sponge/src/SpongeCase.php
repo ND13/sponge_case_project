@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 function spongify(string $input): string {
-    $userInput = $_SERVER['argv'][2];
+    $userInput = $input;
     $charIndex = 0;
     $output = '';
 

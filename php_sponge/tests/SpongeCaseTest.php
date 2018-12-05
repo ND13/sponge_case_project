@@ -9,10 +9,7 @@ final class SpongeCaseTest extends TestCase
 {
     public function testOutput(): void
     {
-        $testOut = 'hElLo wOrLd';
-        $this->assertEquals($testOut, spongify('hello world'));
-        $this->assertEquals($testOut, spongify(' hello  world'));
-        $this->assertEquals($testOut, spongify('_hello_world'));
-        $this->assertEquals($testOut, spongify('123456789'));
+        $this->assertEquals('hElLo wOrLd', spongify('hello world'));
+        $this->assertEquals(' hElLo  wOrLd', spongify(' hello  world'));
     }
 }
