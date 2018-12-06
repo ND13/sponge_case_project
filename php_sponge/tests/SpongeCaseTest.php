@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare (strict_types = 1);
 
 require __DIR__ . "/../src/SpongeCase.php";
 
@@ -11,5 +11,7 @@ final class SpongeCaseTest extends TestCase
     {
         $this->assertEquals('hElLo wOrLd', spongify('hello world'));
         $this->assertEquals(' hElLo  wOrLd', spongify(' hello  world'));
+        $this->assertEquals('hElLo wOrLd ', spongify('hello world '));
+        $this->assertEquals('hElLo 123456789_$', spongify('hello 123456789_$'));
     }
 }
