@@ -1,19 +1,23 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
 
-std::string spongify(const std::string& input) {
+std::string spongify(std::string input) {
+    std::transform(input.begin(), input.end(), input.begin(), ::tolower);
     std::string output = "";
     int charIndex = 0;
 
     for (auto i = input.begin(); i != input.end(); ++i) {
         char currentChar = *i;
         if (currentChar != ' ') {
-            if (charIndex % 2 == 1) {
+            if (charIndex % 2 == 1 && (currentChar >= 'a' && currentChar <= 'z')) {
                 output += std::toupper(currentChar);
                 charIndex++;
-            } else if (charIndex % 2 == 0) {
+            } else if (charIndex % 2 == 0 && (currentChar >= 'a' && currentChar <= 'z')) {
                 output += std::tolower(currentChar);
                 charIndex++;
+            } else {
+                output += currentChar;
             }
         } else {
             output += " ";
