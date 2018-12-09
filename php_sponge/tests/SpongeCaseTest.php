@@ -12,6 +12,7 @@ final class SpongeCaseTest extends TestCase
         $this->assertEquals('hElLo wOrLd', spongify('hello world'));
         $this->assertEquals(' hElLo  wOrLd', spongify(' hello  world'));
         $this->assertEquals('hElLo wOrLd ', spongify('hello world '));
-        $this->assertEquals('hElLo 123456789_$', spongify('hello 123456789_$'));
+        $this->assertEquals('hElLo 123456789_$wOrLd', spongify('hello 123456789_$world'));
+        $this->assertEquals('hElLo 1wOrLd hA4hA', spongify('hello 1world ha4ha'));
     }
 }
